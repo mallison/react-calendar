@@ -20,13 +20,30 @@
         </style>
     </head>
     <body>
+      <div class="container">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+      <h1>React calendar</h1>
+      <p>Show events on a calendar day view.</p>
+      <pre>
+let events = [
+  {start: 30, end: 150},
+  {start: 540, end: 600},
+  {start: 560, end: 620},
+  {start: 610, end: 670}
+];
+
+ReactDOM.render(
+  &lt;Day events={events} />,
+  document.getElementById('day-calendar')
+);
+      </pre>
         <div id="day-calendar"></div>
 
         <script src="http://localhost:3000/js/bundle.js"></script>
         <script>window.layOutDay || document.write('<script src="js/bundle.js"><\/script>');</script>
+        </div>
     </body>
 </html>
